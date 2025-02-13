@@ -1,14 +1,20 @@
 # 3dof-Robotic-arm-to-sort-items-based-on-color
 
+#TABLE OF CONTENTS
+
+-[Components](#Components)
+
+-[Installation](#Installation)
+
 # Components
 
 Arduino Uno R3
 
-2x MG996r servo motors
+2x MG996r servo motors (servos 1 and 2)
 
-1 Sg90 micro servo motors (2 sg90 servos can be used as well)
+1 Sg90 micro servo motors (2 sg90 servos can be used as well) (servo3)
 
-1 mg90s micro servo motor
+1 mg90s micro servo motor(servo 4)
 
 A Bread Board
 
@@ -18,12 +24,24 @@ Buck converter that can output 5v i used the lm2596 buck converter
 
 Battery or power supply capabale of supplying at least 5A of current
 
-# How to Connect the components
+A 3d printer to print the arm structure
+
+# Installation
 
 1. Connect the positive and negative terminals of your battery/power supply to the in+ and in- ends of the buck converter
 2. If using and adjustable buck converter like the lm2596, adjust use a multi meter to check the outout voltage from the out+ and out- of       the buck converter and adjust the voltage to 5v
 3. Connect a wire from the out+ and out- to the positive(+) and negative(-) bus strips on the breadboard
 4. Connect one of the arduino's GND pins to the negative(-) bus strip of the bread board
 5. Connect the brown/ground wire of the servos to the negative(-) bus strip of the bread board
-6. Connect the red wire of the servo's to pins
+6. Connect the red wire/power input(vcc) wire of the servos to the positive(+) bus strip of the bread board
+7. Connect the orange/signal input wire of servo1 to the pin 3 on the Arduino
+8. Connect the orange/signal input wire of servo2 to the pin 4 on the Arduino
+9. Connect the orange/signal input wire of servo3 to the pin 7 on the Arduino
+10. Connect the orange/signal input wire of servo4 to the pin 9 on the Arduino
 
+# How to Run the project
+Open the arm_movement.ino in your Arduino IDE and connect your Arduino UNO and check the com port your arduino is to check this link for help(https://support.arduino.cc/hc/en-us/articles/4406856349970-Select-board-and-port-in-Arduino-IDE#:~:text=Select%20port%20with%20Tools%20%3E%20Port&text=In%20IDE%202%2C%20the%20Tools,dev/ttyACM0%20(Arduino%20Uno)
+Open color_identifier.py
+Replace COM8 in "arduino = serial.Serial('COM8', 9600, timeout=1)" with the yours
+Compile and upload the arduino code to your Arduino UNO
+Run the 
