@@ -3,6 +3,10 @@
 COMPONENTS
 
 2x MG996r servo motors
+
 2x Sg90 micro servo motors
+
 male to female, male to male, and female to female jumper wires
+
+
 
