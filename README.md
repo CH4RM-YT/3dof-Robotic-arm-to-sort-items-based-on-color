@@ -44,7 +44,9 @@ A 3d printer to print the arm structure
 10. Connect the orange/signal input wire of servo4 to the pin 9 on the Arduino
 
 # Configuration
-Open the arm_movement.ino in your Arduino IDE and connect your Arduino UNO and check the com port your arduino is to check this link for help(https://support.arduino.cc/hc/en-us/articles/4406856349970-Select-board-and-port-in-Arduino-IDE#:~:text=Select%20port%20with%20Tools%20%3E%20Port&text=In%20IDE%202%2C%20the%20Tools,dev/ttyACM0%20(Arduino%20Uno)
+Open the arm_movement.ino in your Arduino IDE and connect your Arduino UNO 
+
+Check the com port your arduino is connected to, check this link for help(https://support.arduino.cc/hc/en-us/articles/4406856349970-Select-board-and-port-in-Arduino-IDE#:~:text=Select%20port%20with%20Tools%20%3E%20Port&text=In%20IDE%202%2C%20the%20Tools,dev/ttyACM0%20(Arduino%20Uno)
 
 Replace COM8 in "arduino = serial.Serial('COM8', 9600, timeout=1)" with the yours, in the color_identifier.py file
 
