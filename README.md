@@ -47,7 +47,11 @@ A 3d printer to print the arm structure
 
 Clone the repo:
 
-git clone
+git clone https://github.com/CH4RM-YT/3dof-Robotic-arm-to-sort-items-based-on-color.git
+
+cd codes
+
+pip install -r requirements.txt
 
 Open the arm_movement.ino in your Arduino IDE and connect your Arduino UNO 
 
@@ -55,9 +59,7 @@ Check the com port your arduino is connected to, check this link for help(https:
 
 Replace COM8 in "arduino = serial.Serial('COM8', 9600, timeout=1)" with the yours, in the color_identifier.py file
 
-Compile and upload the arduino code to your Arduino UNO
-
-run pip install -r requirements.txt in your 
+Compile and upload the arduino code to your Arduino UNO 
 
 Run color_identifier.py script
 
