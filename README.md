@@ -1,16 +1,16 @@
 # 3dof-Robotic-arm-to-sort-items-based-on-color
 
-# TABLE OF CONTENTS
+## TABLE OF CONTENTS
 
 -[Components](#Components)
 
 -[Setup](#Setup)
 
--[Configuration](#Configuration)
+-[Installation](#Installation)
 
 -[Usage](#Usage)
 
-# Components
+## Components
 
 Arduino Uno R3
 
@@ -30,7 +30,7 @@ Battery or power supply capabale of supplying at least 5A of current
 
 A 3d printer to print the arm structure
 
-# Setup
+## Setup
 
 1. Connect the positive and negative terminals of your battery/power supply to the in+ and in- ends of the buck converter
 2. If using and adjustable buck converter like the lm2596, adjust use a multi meter to check the outout voltage from the out+ and out- of       the buck converter and adjust the voltage to 5v
@@ -43,26 +43,32 @@ A 3d printer to print the arm structure
 9. Connect the orange/signal input wire of servo3 to the pin 7 on the Arduino
 10. Connect the orange/signal input wire of servo4 to the pin 9 on the Arduino
 
-# Configuration
+## Installation
 
-Clone the repo:
-
+**Clone the repo:**
+```
 git clone https://github.com/CH4RM-YT/3dof-Robotic-arm-to-sort-items-based-on-color.git
-
+```
+**Navigate to the codes folder**
+```
 cd codes
-
+```
+**Install the requirements**
+```
 pip install -r requirements.txt
-
+```
 Open the arm_movement.ino in your Arduino IDE and connect your Arduino UNO 
 
-Check the com port your arduino is connected to, check this link for help(https://support.arduino.cc/hc/en-us/articles/4406856349970-Select-board-and-port-in-Arduino-IDE#:~:text=Select%20port%20with%20Tools%20%3E%20Port&text=In%20IDE%202%2C%20the%20Tools,dev/ttyACM0%20(Arduino%20Uno)
+Check the com port your arduino is connected to, check this link for help [How to check COM port](https://support.arduino.cc/hc/en-us/articles/4406856349970-Select-board-and-port-in-Arduino-IDE#:~:text=Select%20port%20with%20Tools%20%3E%20Port&text=In%20IDE%202%2C%20the%20Tools,dev/ttyACM0%20(Arduino%20Uno))
 
 Replace COM8 in "arduino = serial.Serial('COM8', 9600, timeout=1)" with the yours, in the color_identifier.py file
 
 Compile and upload the arduino code to your Arduino UNO 
 
-Run color_identifier.py script
+## Usage
 
-# Usage
-
+**Run the script**
+```
+python color_identifier.py
+```
 hold a red or green colored item over your camera and watch the arm move
