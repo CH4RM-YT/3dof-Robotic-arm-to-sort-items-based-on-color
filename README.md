@@ -47,7 +47,7 @@ A 3d printer to print the arm structure
 
 **Clone the repo:**
 ```
-git clone https://github.com/CH4RM-YT/3dof-Robotic-arm-to-sort-items-based-on-color.git
+https://github.com/ch4rm78/3dof-Robotic-arm-to-sort-items-based-on-color.git
 ```
 **Navigate to the codes folder**
 ```
